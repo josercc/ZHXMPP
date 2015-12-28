@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9059" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <viewController id="Ejd-Xs-QQK">
+            <layoutGuides>
+                <viewControllerLayoutGuide type="top" id="V1h-dJ-LhP"/>
+                <viewControllerLayoutGuide type="bottom" id="AHx-Ps-rqr"/>
+            </layoutGuides>
+            <view key="view" contentMode="scaleToFill" id="mxc-8b-tPq">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Gyv-vb-l8a">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="160"/>
+                        <color key="backgroundColor" red="1" green="0.4491697321" blue="0.28624256860000002" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SDP-TY-j6t">
+                        <rect key="frame" x="127" y="177" width="46" height="30"/>
+                        <state key="normal" title="Button"/>
+                    </button>
+                </subviews>
+                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="Gyv-vb-l8a" secondAttribute="trailing" id="4js-gg-aMF"/>
+                    <constraint firstItem="Gyv-vb-l8a" firstAttribute="top" secondItem="mxc-8b-tPq" secondAttribute="top" id="JZy-6R-3Zl"/>
+                    <constraint firstItem="Gyv-vb-l8a" firstAttribute="leading" secondItem="mxc-8b-tPq" secondAttribute="leading" id="PjN-t5-8Vr"/>
+                    <constraint firstItem="Gyv-vb-l8a" firstAttribute="height" secondItem="mxc-8b-tPq" secondAttribute="width" multiplier="0.5" id="Xbw-8Y-9XQ"/>
+                </constraints>
+            </view>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+            <point key="canvasLocation" x="392" y="253"/>
+        </viewController>
+    </objects>
+</document>
