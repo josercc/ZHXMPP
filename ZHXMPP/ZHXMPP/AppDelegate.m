@@ -18,12 +18,13 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
-    
+
     NSError *error;
     ViewController *VC = [[ViewController alloc]init];
     VC.viewControllerName = @"张行";
     NSLog(@"%@",VC.viewControllerName);
     
+
 //    UIButton *button = [UIButton new];
 //    button->_buttonName = @"12341";
 //    NSLog(@"%@",button->_buttonName);
