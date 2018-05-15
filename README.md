@@ -1,36 +1,36 @@
-#ZHXMPP
+# ZHXMPP
 
->基于XMPPFramework的二次封装,让XMPP通信更加简单，希望大家可以FORK共同扩展功能
+> 基于XMPPFramework的二次封装,让XMPP通信更加简单，希望大家可以FORK共同扩展功能
 
-#怎么安装使用
+# 怎么安装使用
 
 1.直接下载运行demo
 
 2.使用POD
 
->pod 'ZHXMPP'
+> pod 'ZHXMPP'
 
 
-#怎么使用
+# 怎么使用
 
-##搭建OpenFire服务器(其他基于XMPP服务器也是可以的)
+## 搭建OpenFire服务器(其他基于XMPP服务器也是可以的)
 
-http://www.cnblogs.com/hoojo/archive/2012/05/17/2506769.html
+[http://www.cnblogs.com/hoojo/archive/2012/05/17/2506769.html](http://www.cnblogs.com/hoojo/archive/2012/05/17/2506769.html)
 
-###初始化
+### 初始化
 
     ZHXMPP *xmpp=[ZHXMPP xmpp];
-###初始化服务器地址
+### 初始化服务器地址
 
     xmpp.xmppHost = @"服务器地址";
 
-###初始化端口(默认位5222)
+### 初始化端口(默认位5222)
 
     xmpp.xmppPort=5222;
-###初始化XMPP服务器
+### 初始化XMPP服务器
 
     [xmpp steup];
-###注册
+### 注册
 ```
 /**
  *  注册XMPP
@@ -41,7 +41,7 @@ http://www.cnblogs.com/hoojo/archive/2012/05/17/2506769.html
  */
 - (void)regiserUserName:(NSString *)userName passWord:(NSString *)passWord complete:(RegiserSuccessComplete)complete;
 ```
-###登录
+### 登录
 
 ```
 /**
@@ -54,21 +54,21 @@ http://www.cnblogs.com/hoojo/archive/2012/05/17/2506769.html
 - (void)loginUserName:(NSString *)userName passWord:(NSString *)passWord  complete:(LoginSuccessComplete)complete;
 ```
 
-###退出登录
+### 退出登录
 
 ```
 ///退出登录
 - (void)logout;
 ```
 
-###获取好友列表
+### 获取好友列表
 
 ```
 ///获取好友列表 回掉:didReciverFriendListComplete
 - (void)getFrinedList;
 ```
 
-###接受他人好友请求
+### 接受他人好友请求
 
 ```
 /**
@@ -79,7 +79,7 @@ http://www.cnblogs.com/hoojo/archive/2012/05/17/2506769.html
 - (void)subscribePresenceToUser:(NSString *)jid;
 ```
 
-###添加好友
+### 添加好友
 
 ```
 /**
@@ -91,7 +91,7 @@ http://www.cnblogs.com/hoojo/archive/2012/05/17/2506769.html
 - (void)addFrindJid:(NSString *)jid nikeName:(NSString *)nikeName;
 ```
 
-###拒绝好友请求
+### 拒绝好友请求
 
 ```
 /*!
@@ -102,7 +102,7 @@ http://www.cnblogs.com/hoojo/archive/2012/05/17/2506769.html
 - (void)rejectFriendRequestJid:(NSString *)jid;
 ```
 
-###删除好友
+### 删除好友
 
 ```
 /*!
@@ -113,7 +113,7 @@ http://www.cnblogs.com/hoojo/archive/2012/05/17/2506769.html
 - (void)deleteFriendRequestJid:(NSString *)jid;
 ```
 
-###查看好友资料
+### 查看好友资料
 
 ```
 /**
@@ -125,7 +125,7 @@ http://www.cnblogs.com/hoojo/archive/2012/05/17/2506769.html
 - (void)fectchUserInfo:(NSString *)jidName complete:(DidReciveVCardInfoComplete)complete;
 ```
 
-###发送消息
+### 发送消息
 
 ```
 /*!
